@@ -15,9 +15,9 @@ function createViewModel() {
     var current_location;
    
     viewModel.is_tracking = false;
-    viewModel.latitude = 15.447819409392789;
-    viewModel.longitude = 120.93888133764267;
-    viewModel.zoom = 20;
+    viewModel.latitude = 43.792174;
+    viewModel.longitude = 11.271151;
+    viewModel.zoom = 18;
 
     var total_distance = 0;
     var total_steps = 0;
@@ -69,7 +69,7 @@ function createViewModel() {
                             var marker = new mapsModule.Marker();
                             marker.position = mapsModule.Position.positionFromLatLng(viewModel.latitude, viewModel.longitude); 
                             mapView.addMarker(marker);
-                            
+
                             location_count = locations.length;
 
                             if (location_count >= 2) {
